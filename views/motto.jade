@@ -1,0 +1,270 @@
+extends layout
+
+block content
+  body
+    include navbar
+    section#intro
+      .intro-container
+        #introCarousel.carousel.slide.carousel-fade(data-ride='carousel')
+          ol.carousel-indicators
+          .carousel-inner(role='listbox')
+            .carousel-item.active
+              .carousel-background
+                img(src='1.jpg', alt='')
+              header.section-header(style='margin-top: 200px;')
+                h2 our mottos
+            .carousel-item
+              .carousel-background
+                img(src='2.jpg', alt='')
+              header.section-header(style='margin-top: 200px;')
+                h2 our mottos
+            .carousel-item
+              .carousel-background
+                img(src='3.jpg', alt='')
+              header.section-header(style='margin-top: 200px;')
+                h2 our mottos
+            .carousel-item
+              .carousel-background
+                img(src='img/intro-carousel/4.jpg', alt='')
+              header.section-header(style='margin-top: 200px;')
+                h2 our mottos
+            .carousel-item
+              .carousel-background
+                img(src='img/intro-carousel/5.jpg', alt='')
+              header.section-header(style='margin-top: 200px;')
+                h2 our mottos
+          a.carousel-control-prev(href='#introCarousel', role='button', data-slide='prev')
+            span.carousel-control-prev-icon.ion-chevron-left(aria-hidden='true')
+            span.sr-only Previous
+          a.carousel-control-next(href='#introCarousel', role='button', data-slide='next')
+            span.carousel-control-next-icon.ion-chevron-right(aria-hidden='true')
+            span.sr-only Next
+    // #intro
+    br
+    br
+    br
+    //
+      ========================================================-members page----------=======================================
+      --------
+    section#hotels.section-with-bg.wow.fadeInUp
+      .container-fluid
+        .row.justify-content-center(style='margin-left: 3%; margin-right: 3%;')
+          .col-xs-10.col-sm-6.col-md-6.col-lg-4.col-xl-4(style='margin-bottom:20px; padding:0px;')
+            center
+              img.btn.btn-primary(src='img/ourmotto/quality_education_sq.png', data-toggle='modal', data-target='#myModal1', style='width: 100%; border: 0px 0px 0px 0px; border-color: white; background-color: white;')
+            #myModal1.modal
+              .modal-dialog.modal-lg
+                .modal-content
+                  // Modal Header
+                  .modal-header
+                    h4.modal-title(style=' color: red;') QUALITY EDUCATION
+                    button.close(type='button', data-dismiss='modal') ×
+                  // Modal body
+                  .modal-body
+                    p
+                      | Education is a basic human right and a significant factor in the development of children, communities and countries. Opening classroom doors to all children will help break the intergenerational chain of poverty because education is intrinsically linked to all development goals, such as supporting gender empowerment, health , reducing hunger, economic growth and building peace.
+                      br
+                      | Today, education remains an inaccessible right for millions of children around the world. More than 72 million children of primary education age are not in school and 759 million adults are illiterate and do not have the awareness necessary to improve both their living conditions and those of their children. Standing between these children and the classroom is Poverty and Lack of awareness.
+                      br
+                      | The main area to make an impact is rural and underprivileged section where education is inaccessible to children. As these sections contribute to major part of illiteracy in world.We believe that youths can change the present scenario of Education by implementing their ideas and Innovative ways from their Vivid brain. Enthusiasm and efforts of youth can bring LIGHT of hope to the lives of these children. One of GYWS' prime projects is Jagriti Vidya Mandir, an English-medium school in Gopali, which aims to provide education to children from underprivileged backgrounds. Established in 2008, the school currently has students studying from Nursery to Class V. Its main motto is to educate each and every child for a better tomorrow.
+                  // Modal footer
+                  .modal-footer
+                    button.btn.btn-danger(type='button', data-dismiss='modal') Close
+          .col-xs-10.col-sm-6.col-md-6.col-lg-4.col-xl-4(style='margin-bottom:20px; padding:0px;')
+            center
+              img.btn.btn-primary(src='img/ourmotto/youth_upliftment_sq.png', data-toggle='modal', data-target='#myModal2', style='width: 100%; border: 0px 0px 0px 0px; border-color: white; background-color: white;')
+            #myModal2.modal
+              .modal-dialog.modal-lg
+                .modal-content
+                  // Modal Header
+                  .modal-header
+                    h4.modal-title(style=' color: red;') YOUTH UPLIFTMENT
+                    button.close(type='button', data-dismiss='modal') ×
+                  // Modal body
+                  .modal-body
+                    | Young people are a crucial segment of society, they are the basis for future development. Youths are most active people, occupy major part of society and they play a vital role in politics, economic development and social movements. Extent of development of society is dependent on the number of empowered youth.
+                    br
+                    | According to studies, youth constitute 18% of the global population, i.e about 1.1 billion in number.Amongst this number approximately 238 million youth live in extreme poverty and more than 73 million are unemployed.Addressing youth unemployment and underemployment has become a priority for Governments worldwide.
+                    br
+                    | To fight against this situation of youth, LIGHT is trying to connect empowered youths for Youth upliftment. To cope up with the problem of unemployment, we can share our skills, so as to make them capable enough to earn jobs and to rise above the poverty. Due to lack of information sources, government policies for youth upliftment cannot reach needy person. Thus we can put forward our steps to create awareness about this policy and we can give them an opportunity to contribute toward Nation's development.
+                    br
+                    | Prayas initiative of Gopali Youth Welfare Society focused on Youth Upliftment. Prayas is providing skill training to local youths so that they can rise above unemployment and learn various skills to earn jobs. Parallel to skill development, Prayas is focused to Connect the youth to the government by awakening them about government policies.
+                  // Modal footer
+                  .modal-footer
+                    button.btn.btn-danger(type='button', data-dismiss='modal') Close
+          .col-xs-10.col-sm-6.col-md-6.col-lg-4.col-xl-4(style='margin-bottom:20px; padding:0px;')
+            center
+              img.btn.btn-primary(src='img/ourmotto/women_empowerment_sq.png', data-toggle='modal', data-target='#myModal3', style='width: 100%; border: 0px 0px 0px 0px; border-color: white; background-color: white;')
+            #myModal3.modal
+              .modal-dialog.modal-lg
+                .modal-content
+                  // Modal Header
+                  .modal-header
+                    h4.modal-title(style=' color: red;') WOMEN EMPOWERMENT
+                    button.close(type='button', data-dismiss='modal') ×
+                  // Modal body
+                  .modal-body
+                    | Globally, women have fewer opportunities for economic participation than men, less access to basic and higher education, greater health and safety risks, and less political representation. Guaranteeing the rights of women and giving them opportunities to reach their full potential is critical not only for attaining gender equality, but also for meeting a wide range of international development goals. Empowered women and girls contribute to the health and productivity of their families, communities, and countries, creating a ripple effect that benefits everyone.
+                    br
+                    | We can empower women by creating safe workplaces for them, Education, by raising voice against gender inequality. Skill training is the best way to empower women, as it provides job opportunities and chances to stand independent. Young generation is aware about the importance of women in society and can work together to help them to become independent.
+                    br
+                    | GYWS is working on various initiatives for women empowerment like Tailoring Workshop and Computer workshop where they gain skills and can make scope to earn. GYWS aims to make women competent to men to bring gender equality in society.
+                  // Modal footer
+                  .modal-footer
+                    button.btn.btn-danger(type='button', data-dismiss='modal') Close
+          .col-xs-10.col-sm-6.col-md-6.col-lg-4.col-xl-4(style='margin-bottom:20px; padding:0px;')
+            center
+              img.btn.btn-primary(src='img/ourmotto/social_awareness_sq.png', data-toggle='modal', data-target='#myModal4', style='width: 100%; border: 0px 0px 0px 0px; border-color: white; background-color: white;')
+            #myModal4.modal
+              .modal-dialog.modal-lg
+                .modal-content
+                  // Modal Header
+                  .modal-header
+                    h4.modal-title(style=' color: red;') SOCIAL AWARENESS
+                    button.close(type='button', data-dismiss='modal') ×
+                  // Modal body
+                  .modal-body
+                    | It's quite obvious today that root cause of the ground level problems in our society is social unawareness. Most of the welfare schemes and financial schemes of the government and other social organisations are practically inaccessible to the unprivileged. Voice against social evils of child labour and girl suppression is yet not loud enough amongst the weaker sections. Prevalent issues like child marriage, suicides and rapes still pose a threat to the society.
+                    br
+                    | Although it may be argued that illiteracy is the reason behind this, it cannot be denied that there are not enough awareness drives or programs going on. Moreover, with the advent of digitization in our lives, the following statistics highlight why it is necessary for the youth to take up the responsibility of awareness.
+                    br
+                    br
+                    ul
+                      li A population of 20 crores in India yet does not have an Aadhar card.
+                      li
+                        | According to Campaign Against Child Labour (CAC) study , there are over 1 million child labourers in India.
+                      li
+                        | According to Reserve Bank of Indiaâ€™s report in 2016, it can be roughly approximated that 31 crores do not yet have a bank account.
+                    br
+                    |                 At GYWS, we have made maximum efforts to spread social awareness under our chapter. Some members of GYWS came forward and made a team which hoped to make IIT Kharagpur campus child labor free. Till now, 11 child laborers have been freed from various eateries and canteens. GYWS has ensured that they get their primary education.Moreover under our program such as E-Samadhan , we work to make the local people aware of the welfare schemes run by the government and access basic requirements such as driving license, aadhar card etc. Motivated from the optimistic response, we have great future prospects.
+                    br
+                    br
+                    ul
+                      li
+                        | Create awareness about the government welfare schemes and also Non-governmental opportunities for availing welfare schemes.
+                      li Create social awareness about the need for girl child education.
+                      li
+                        | Protest against child labour through various means by volunteering in some pioneer organisations/movements to eradicate child labour.
+                      li
+                        | Awareness regarding various ways of saving money and banking schemes to encourage financial upliftment.
+                      li
+                        | Launch of anti child-labour awareness drives rewarding citizens who identify and report cases of child labour
+                      li
+                        | Persuade employers and guardians of children not to accept or indulge children into practicing labour.
+                  // Modal footer
+                  .modal-footer
+                    button.btn.btn-danger(type='button', data-dismiss='modal') Close
+          .col-xs-10.col-sm-6.col-md-6.col-lg-4.col-xl-4(style='margin-bottom:20px; padding:0px;')
+            center
+              img.btn.btn-primary(src='img/ourmotto/healthcare_awareness_sq.png', data-toggle='modal', data-target='#myModal5', style='width: 100%; border: 0px 0px 0px 0px; border-color: white; background-color: white;')
+            #myModal5.modal
+              .modal-dialog.modal-lg
+                .modal-content
+                  // Modal Header
+                  .modal-header
+                    h4.modal-title(style=' color: red;') HEALTH CARE AWARENESS
+                    button.close(type='button', data-dismiss='modal') ×
+                  // Modal body
+                  .modal-body
+                    | The primary requirement of an individual is a healthy working body. But the public health status and the standard of living in India is not nearly at a satisfying level. Diseases such as dengue fever, hepatitis, tuberculosis, malaria and pneumonia continue to plague India due to increased resistance to drugs. These diseases can be attributed to poor sanitation and inadequate safe drinking water.
+                    br
+                    | Despite health improvements over the last thirty years, lives continue to be lost to early childhood diseases, inadequate newborn care and childbirth-related causes. More than two million children die every year from preventable infections. A fully-fledged health care movement is the requirement of the present. The following initiatives are aimed towards overall health improvement:
+                    br
+                    br
+                    ul
+                      li
+                        | Educating the masses with the causes, prevention, symptoms and treatment of various infectious diseases and health issues.
+                      li
+                        | Launch of awareness programmes towards adopting a healthier lifestyle of individual.
+                      li
+                        | Collaborating with the efforts and initiatives of the government aimed at the improvement of health standards.
+                      li Provision of first aid kits to the needy.
+                      li
+                        | Financially help patients requiring high amount for treatment by publicising in various platforms.
+                  // Modal footer
+                  .modal-footer
+                    button.btn.btn-danger(type='button', data-dismiss='modal') Close
+          .col-xs-10.col-sm-6.col-md-6.col-lg-4.col-xl-4(style='margin-bottom:20px; padding:0px;')
+            center
+              img.btn.btn-primary(src='img/ourmotto/save_environment_sq.png', data-toggle='modal', data-target='#myModal6', style='width: 100%; border: 0px 0px 0px 0px; border-color: white; background-color: white;')
+            #myModal6.modal
+              .modal-dialog.modal-lg
+                .modal-content
+                  // Modal Header
+                  .modal-header
+                    h4.modal-title(style=' color: red;') SAVE ENVIRONMENT
+                    button.close(type='button', data-dismiss='modal') ×
+                  // Modal body
+                  .modal-body
+                    | Besides various reforms, it is equally important to maintain a healthy friendship with environment. Especially in heavy industrial areas, where environmental degradation has become a trend, we need to take modern measures. In the 2014 WHO report, Delhi emerged as the most polluted cities in the world. Gwalior, Allahabad, Patna and Raipur are among the world’s 10 most polluted cities.
+                    br
+                    | The situation of rivers has been worsening in India. Due to pressures from population and development, our rivers are dying. 25% of India is turning into desert and in about 15 years, we may have half the water we need for our survival if the degradation continues. The rivers have supported us for generations, now it's our turn to support them back. We look forward to achieving and implementing the following:
+                    br
+                    br
+                    ul
+                      li
+                        | Spreading education at mass level so as to inspire a change in individual using various media and platforms.
+                      li
+                        | Monitoring and publicizing the air and river pollution index regularly and aware the masses of the pollution causes and effects.
+                      li
+                        | Launching volunteering drives to clean surroundings, rivers and other water bodies.
+                      li Plantation drives for green surroundings.
+                      li Awareness drives aimed at preventing wastage of electricity and water.
+                      li Providing pollution masks and other.
+                  // Modal footer
+                  .modal-footer
+                    button.btn.btn-danger(type='button', data-dismiss='modal') Close
+          .col-xs-10.col-sm-6.col-md-6.col-lg-4.col-xl-4(style='margin-bottom:20px; padding:0px;')
+            center
+              img.btn.btn-primary(src='img/ourmotto/food_for_all_sq.png', data-toggle='modal', data-target='#myModal7', style='width: 100%; border: 0px 0px 0px 0px; border-color: white; background-color: white;')
+            #myModal7.modal
+              .modal-dialog.modal-lg
+                .modal-content
+                  // Modal Header
+                  .modal-header
+                    h4.modal-title(style=' color: red;') FOOD FOR ALL
+                    button.close(type='button', data-dismiss='modal') ×
+                  // Modal body
+                  .modal-body
+                    | No matter what progress is desired socio-economically, it is a sad reality that Food for All is a far fetched dream for our country. The Global Hunger Index 2016 ranks India at 97th position, out of 118 countries on the basis of three leading indicators: prevalence of wasting and stunting in children under 5 years, under 5 child mortality rate, and the proportion of undernourished in the population. India is home to the largest undernourished population in the world. According to FAO estimates in The State of Food Security and Nutrition in the World, 2017 report, 190.7 million people are undernourished in India.
+                    br
+                    br
+                    ul
+                      li 14.5% of the population is undernourished in India.
+                      li 51.4% of women in reproductive age between 15 to 49 years are anaemic.
+                      li
+                        | 38.4% of children aged under five in India are stunted (i.e.,too short for their age), while 21% suffer from wasting, which means their weight is too low for their height.
+                      li
+                        | Every 1 out of 4 children is malnourished. However, we can make a deep impact by taking small steps towards Food For All, which may include:
+                      li
+                        | Carrying out awareness initiatives against food wastage, especially where large scale food production occurs.
+                      li
+                        | Initiation of a service that allows leftover food from hotels and homes to be delivered to the needy instead of being dumped.
+                      li
+                        | Using modern data access and technologies to form a cost optimizing dietary plan suited for the region to provide a balanced diet to the underprivileged and malnourished.
+                      li
+                        | Encouraging companies or economically stable families to take food sponsorship programs for those who are not privileged enough.
+                  // Modal footer
+                  .modal-footer
+                    button.btn.btn-danger(type='button', data-dismiss='modal') Close
+          .col-xs-10.col-sm-6.col-md-6.col-lg-4.col-xl-4(style='margin-bottom:20px; padding:0px;')
+            center
+              img.btn.btn-primary(src='img/ourmotto/collaboration_to_succeed_sq.png', data-toggle='modal', data-target='#myModal8', style='width: 100%; border: 0px 0px 0px 0px; border-color: white; background-color: white;')
+            #myModal8.modal
+              .modal-dialog.modal-lg
+                .modal-content
+                  // Modal Header
+                  .modal-header
+                    h4.modal-title(style=' color: red;') COLLABORATION TO SUCCEED
+                    button.close(type='button', data-dismiss='modal') ×
+                  // Modal body
+                  .modal-body
+                    | Following the words of Helen Keller, alone we can do so little; together we can do so much, we aim to form a network of autonomous self-sufficient student-run centres across India that will address the local problems and act selflessly to achieve the L8 objectives for a better world.
+                    br
+                    | Under our initiative, we wish to share and exchange ideas, models of working and innovations of our program with already functional social student groups or NGOs as well as newly formed teams . This makes our concept of social service highly interactive and progressive because of the fact that the collaborated NGOs have better local understanding. We not only provide guidance to the associate members , but also wonderful social exposure. We have also planned for the execution of a global social seminar.
+                  // Modal footer
+                  .modal-footer
+                    button.btn.btn-danger(type='button', data-dismiss='modal') Close
+    br
+    br
+    br

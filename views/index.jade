@@ -1,0 +1,380 @@
+extends layout
+
+block content
+  body
+    include navbar
+    section#intro
+      .intro-container
+        #introCarousel.carousel.slide.carousel-fade(data-ride='carousel')
+          ol.carousel-indicators
+          .carousel-inner(role='listbox')
+            .carousel-item.active
+              .carousel-background
+                img(src='1.jpg', alt='')
+              .carousel-container
+                .carousel-content
+                  a.btn-get-started.scrollto(href='#featured-services') Donate Now
+            .carousel-item
+              .carousel-background
+                img(src='2.jpg', alt='')
+              .carousel-container
+                .carousel-content
+                  a.btn-get-started.scrollto(href='#featured-services') Donate Now
+            .carousel-item
+              .carousel-background
+                img(src='3.jpg', alt='')
+              .carousel-container
+                .carousel-content
+                  a.btn-get-started.scrollto(href='#featured-services') Donate Now
+            .carousel-item
+              .carousel-background
+                img(src='img/intro-carousel/4.jpg', alt='')
+              .carousel-container
+                .carousel-content
+                  a.btn-get-started.scrollto(href='#featured-services') Donate Now
+            .carousel-item
+              .carousel-background
+                img(src='img/intro-carousel/5.jpg', alt='')
+              .carousel-container
+                .carousel-content
+                  a.btn-get-started.scrollto(href='#featured-services') Donate Now
+          a.carousel-control-prev(href='#introCarousel', role='button', data-slide='prev')
+            span.carousel-control-prev-icon.ion-chevron-left(aria-hidden='true')
+            span.sr-only Previous
+          a.carousel-control-next(href='#introCarousel', role='button', data-slide='next')
+            span.carousel-control-next-icon.ion-chevron-right(aria-hidden='true')
+            span.sr-only Next
+          // #intro
+    main#main
+      //
+        ==========================
+        About Us Section
+        ============================
+      section#about
+        .container
+          header.section-header
+            h3 About Us
+            p
+              | LIGHT is an initiative of one of India's largest student-run government registered NGO Gopali Youth Welfare Society, based in IIT Kharagpur. Gopali Youth Welfare Society aims at the overall socio-economic development of the underprivileged near the IIT Kharagpur campus. GYWS started in 2002 with just 2 socially motivated people desiring to bring some change and now has over 150 active members and a budget of 30 lakh INR per annum, impacting and improving lifestyles of over 1000 families.
+              br
+              |             After the success of strategies and plans of the Gopali Youth Welfare Society (GYWS) near the area of IIT Kharagpur ,the society planned to reciprocate similar models of social upliftment throughout the nation so as to create a greater impact by spreading knowledge and experience gained through such long journey of social service and hence came up with the initiative named LIGHT to reach to masses all over India.
+              br
+              |             LIGHT currently aims at forming teams of spirited students in various colleges across India and bringing them together working for overall social development in their area and hence impact the total country as a whole.
+          .row.about-cols
+            .col-md-4.wow.fadeInUp
+              .about-col
+                .img
+                  // <img src="img/about-mission.jpg" alt="" class="img-fluid">
+                  .icon
+                    i.ion-ios-speedometer-outline
+                br
+                h2.title
+                  a(href='#') Our Mission
+                p
+                  | We want to reach every underprivileged society of nation to help them fulfill their dream of living an independent and prosperous life. We strongly believe that India's progress depends on the progress of its weakest links.
+            .col-md-4.wow.fadeInUp(data-wow-delay='0.1s')
+              .about-col
+                .img
+                  // <img src="img/about-plan.jpg" alt="" class="img-fluid">
+                  .icon
+                    i.ion-ios-list-outline
+                br
+                h2.title
+                  a(href='#') Our Plan
+                p
+                  | We work hard to bring together all the underprivileged sections of society and enable them to establish a sustainable society where each person will have the potential to dream big as well as have the chances of fulfilling his dreams.
+            .col-md-4.wow.fadeInUp(data-wow-delay='0.2s')
+              .about-col
+                .img
+                  // <img src="img/about-vision.jpg" alt="" class="img-fluid">
+                  .icon
+                    i.ion-ios-eye-outline
+                br
+                h2.title
+                  a(href='#') Our Vision
+                p
+                  | We believe that every individual has the same potential. The team of Gopali Youth Welfare Society is working for many years and now has a self-sustainable, efficient structure. We want to reciprocate the successful project of Gopali Youth Welfare Society throughout the nation with the help of socially motivated youth by encouraging them and by piloting them with technical and management tools to help underprivileged people across the nation.
+      // #about
+      //
+        ==========================
+        Founder's Message
+        ============================
+      section#services.section-bg
+        .container
+          header.section-header
+            h3 FOUNDER'S MESSAGE
+          .row.justify-content-center
+            #message.col-10.col-md-8.text-left
+              br
+              p(style='font-size: 1.1rem;')
+                | I have seen the success of the strategies and plans of GYWS. GYWS will now act as a pilot project to guide us with the ground level problems. Involving locals has given us great results in terms of GYWS, so LiGHT will follow in similar footsteps.
+                br
+                | We aim to form a network of autonomous and self-sufficient student-run centers across India that will address the local problems and act selflessly to achieve the L8 objectives for a better world!
+                br
+                | We have a very spirited team and so far we have achieved all our targets as per plan. We are ready to have a head start!
+              footer.text-right -Mr. Krushi Bandi, Founder, LIGHT
+            .col-md-auto.my-auto.text-center
+              img.b7.rounded-circle.img-fluid(src='krushi.jpeg', style='margin-top:14%; width:260px; margin-right: 15px; margin-left:15px; margin-bottom: 20px')
+      //
+        ==========================
+        Our Reach
+        ============================
+      section#reach
+        .container-fluid
+          br
+          br
+          .row
+            .col-md-12
+              header.section-header
+                h3 OUR REACH
+          br
+          br
+          .row
+            .col-md-5
+              #mapdiv.col-md-8
+                img#mapdiv(src='map3.jpg', usemap='#Map', border='0')
+                map#Map(name='Map')
+                  area#rooh(target='_top', alt='LIGHT Rooh', title='LIGHT Rooh', href='', coords='141,142,14', shape='circle')
+                  area#sikkim(target='_top', alt='LIGHT Sikkim', title='LIGHT Sikkim', href='', coords='356,197,13', shape='circle')
+                  area#ffi(target='_top', alt='LIGHT FFI', title='LIGHT FFI', href='', coords='327,267,14', shape='circle')
+                  area#gaya(target='_top', alt='LIGHT Gaya', title='LIGHT Gaya', href='', coords='287,230,16', shape='circle')
+                  area#bhopal(target='_top', alt='LIGHT Bhopal', title='LIGHT Bhopal', href='', coords='138,249,15', shape='circle')
+                  area#aaroha(target='_top', alt='LIGHT Aaroha', title='LIGHT Aaroha', href='', coords='183,268,16', shape='circle')
+                  area#samvedhna(target='_top', alt='LIGHT Savedhna', title='LIGHT Savedhna', href='', coords='149,302,16', shape='circle')
+                  area#rotaract(target='_top', alt='LIGHT Rotaract', title='LIGHT Rotaract', href='', coords='204,445,16', shape='circle')
+                  area#iiitdm(target='_top', alt='LIGHT IIITDM Kanchipuram', title='LIGHT IIITDM Kanchipuram', href='', coords='202,485,15', shape='circle')
+            .col-md-2
+            .col-md-4
+              center
+                #roohdiv(active='')
+                  p(style='margin-top: 100px')
+                  h3
+                    | LIGHT 
+                    i(style='color:rgb(0,228,105)') Rooh
+                    |  (Living in greater horizon) was established with the objectives of making people aware of problems faced by modern society. It also aims in helping people's social, economic, cultural development and encouraging them to find out solutions to there problems based on available sources.
+                  p
+                #bhopaldiv(active='', style='display: none;')
+                  p(style='margin-top: 100px')
+                  h3
+                    | LIGHT
+                    i(style='color:rgb(0,228,105)') Bhopal 
+                    |   (Living in greater horizon) was established with the objectives of making people aware of problems faced by modern society. It also aims in helping people's social, economic, cultural development and encouraging them to find out solutions to there problems based on available sources.
+                  p
+                #aarohadiv(style='display: none;')
+                  p(style='margin-top: 100px')
+                  h3
+                    | LIGHT 
+                    i(style='color:rgb(0,228,105)') Aaroha
+                    |  (Living in greater horizon) was established with the objectives of making people aware of problems faced by modern society. It also aims in helping people's social, economic, cultural development and encouraging them to find out solutions to there problems based on available sources.
+                  p
+                #samvedhnadiv(style='display: none;')
+                  p(style='margin-top: 100px')
+                  h3
+                    | LIGHT
+                    i(style='color:rgb(0,228,105)')  Samvedhna
+                    |   (Living in greater horizon) was established with the objectives of making people aware of problems faced by modern society. It also aims in helping people's social, economic, cultural development and encouraging them to find out solutions to there problems based on available sources.
+                  p
+                #rotaractdiv(style='display: none;')
+                  p(style='margin-top: 100px')
+                  h3
+                    | LIGHT 
+                    i(style='color:rgb(0,228,105)') Rotract
+                    |  (Living in greater horizon) was established with the objectives of making people aware of problems faced by modern society. It also aims in helping people's social, economic, cultural development and encouraging them to find out solutions to there problems based on available sources.
+                  p
+                #iiitdmdiv(style='display: none;')
+                  p(style='margin-top: 100px')
+                  h3
+                    | LIGHT 
+                    i(style='color:rgb(0,228,105)') IITDM 
+                    |  (Living in greater horizon) was established with the objectives of making people aware of problems faced by modern society. It also aims in helping people's social, economic, cultural development and encouraging them to find out solutions to there problems based on available sources.
+                  p
+                #gayadiv(style='display: none;')
+                  p(style='margin-top: 100px')
+                  h3
+                    | LIGHT 
+                    i(style='color:rgb(0,228,105)') Gaya 
+                    |  (Living in greater horizon) was established with the objectives of making people aware of problems faced by modern society. It also aims in helping people's social, economic, cultural development and encouraging them to find out solutions to there problems based on available sources.
+                  p
+                #ffidiv(style='display: none;')
+                  p(style='margin-top: 100px')
+                  h3
+                    | LIGHT 
+                    i(style='color:rgb(0,228,105)') FFI
+                    |   (Living in greater horizon) was established with the objectives of making people aware of problems faced by modern society. It also aims in helping people's social, economic, cultural development and encouraging them to find out solutions to there problems based on available sources.
+                  p
+                #sikkimdiv(style='display: none;')
+                  p(style='margin-top: 100px')
+                  h3
+                    | LIGHT 
+                    i(style='color:rgb(0,228,105)') Sikkim
+                    |   (Living in greater horizon) was established with the objectives of making people aware of problems faced by modern society. It also aims in helping people's social, economic, cultural development and encouraging them to find out solutions to there problems based on available sources.
+                  p
+        .col-md-1
+      br
+      br
+      section#Register.section-bg
+        br
+        br
+        .container
+          .row.justify-content-center
+            .col-md-6
+              br
+              p(style='font-size:20px ')
+                | Do you want to be one of use? Sure you want, because we are an awesome team!. Here we work hard every day to craft pixel perfect sites.
+              // Trigger/Open The Modal
+              a.btn-get-started.scrollto(href='#contact', style='margin-left: -5px;')  Contact us 
+              // The Modal
+              #myModal.modal
+                // Modal content
+                .modal-content
+                  span.close ×
+                  p Our contact details are..
+              br
+            .col-md-6.text-center
+              h2#serif(style='font-size: 45px;color:black;font-family: Montserrat')
+                strong  Register Your College
+              img.img-responsive(src='reg.png', style='width: 100%')
+          // row
+        br
+        br
+      section#WhyContactUs
+        .container
+          br
+          br
+          .row.justify-content-center
+            .col-md-6.text-center
+              h2#serif.text-center(style='font-size: 45px;color:black;font-family: Montserrat')
+                strong Why Join us?
+              img.img-responsive.text-center(src='think.jpeg', style='width: 60%')
+            .col-md-6
+              p
+              ul(style='font-size: 1.2rem;')
+                li Be a part of Noble cause.
+                li
+                  | To be a part of a community that can transform lives and be socially responsible citizens.
+                li A chance to collaborate and work with IIT-Kharagpur students.
+                li Provide you a certificate that adds value to your profile.
+                li Social Internships for volunteers.
+                li Exchange program within centres-An opportunity to visit IIT Kharagpur.
+                li Opportunity to attend social entrepreneurship conference in IIT Kharagpur.
+                li Chance to host National level conferences in your college.
+              p
+              br
+              br
+          // row
+          //
+            <section id="testimonials">
+            <div class="container">
+            <header class="section-header">
+            <h3>Testimonials</h3>
+            </header>
+            <div class="owl-carousel testimonials-carousel">
+            <div class="testimonial-item">
+            <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
+            <h3>Saul Goodman</h3>
+            <h4>Ceo &amp; Founder</h4>
+            <p>
+            <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+            <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+            </div>
+            <div class="testimonial-item">
+            <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
+            <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+            <p>
+            <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+            <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+            </div>
+            <div class="testimonial-item">
+            <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
+            <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+            <p>
+            <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+            Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+            <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+            </div>
+            <div class="testimonial-item">
+            <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
+            <h3>Matt Brandon</h3>
+            <h4>Freelancer</h4>
+            <p>
+            <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+            Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+            <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+            </div>
+            <div class="testimonial-item">
+            <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+            <p>
+            <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+            Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+            <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+            </div>
+            </div>
+            </div>
+            </section>
+          // #testimonials
+          //
+            ==========================
+            Contact Section
+            ============================
+      section#contact.section-bg.wow.fadeInUp
+        .container
+          .section-header
+            h3 Contact Us
+            p
+              | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+          .row.contact-info
+            .col-md-4
+              .contact-address
+                i.ion-ios-location-outline
+                h3 Address
+                address A108 Adam Street, NY 535022, USA
+            .col-md-4
+              .contact-phone
+                i.ion-ios-telephone-outline
+                h3 Phone Number
+                p
+                  a(href='tel:+917566782230') +91 756-678-2230
+            .col-md-4
+              .contact-email
+                i.ion-ios-email-outline
+                h3 Email
+                p
+                  a(href='mailto:info@example.com') info@example.com
+          .form
+            #sendmessage Your message has been sent. Thank you!
+            #errormessage
+            form.contactForm(action='', method='post', role='form')
+              .form-row
+                .form-group.col-md-6
+                  input#name.form-control(type='text', name='name', placeholder='Your Name', data-rule='minlen:4', data-msg='Please enter at least 4 chars')
+                  .validation
+                .form-group.col-md-6
+                  input#email.form-control(type='email', name='email', placeholder='Your Email', data-rule='email', data-msg='Please enter a valid email')
+                  .validation
+              .form-row
+                .form-group.col-md-6
+                  input#subject.form-control(type='text', name='subject', placeholder='Mobile Number', data-rule-minlength='10', data-rule-maxlength='10', data-rule-digits='”true”', data-msg-minlength='Enter a valid phone number', data-msg-maxlength='Enter a valid phone number', data-msg-digits='Enter a valid phone number')
+                  .validation
+                .form-group.col-md-6
+                  input#subject.form-control(type='text', name='subject', placeholder='College Name', data-rule='minlen:4', data-msg='Please enter at least 8 chars of subject')
+                  .validation
+              .form-group
+                textarea.form-control(name='message', rows='5', data-rule='required', data-msg='Please write something for us', placeholder='Message')
+                .validation
+              .text-center
+                button(type='submit') Send Message
+      // #contact
+      //
+
+    

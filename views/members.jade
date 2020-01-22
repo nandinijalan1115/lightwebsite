@@ -1,0 +1,304 @@
+extends layout
+
+block content
+  body
+    include navbar
+    //
+      ==========================
+      Intro Section
+      ============================
+    section#intro
+      .intro-container
+        #introCarousel.carousel.slide.carousel-fade(data-ride='carousel')
+          ol.carousel-indicators
+          .carousel-inner(role='listbox')
+            .carousel-item.active
+              .carousel-background
+                img(src='1.jpg', alt='')
+              
+            .carousel-item
+              .carousel-background
+                img(src='2.jpg', alt='')
+            .carousel-item
+              .carousel-background
+                img(src='3.jpg', alt='')
+            .carousel-item
+              .carousel-background
+                img(src='img/intro-carousel/4.jpg', alt='')
+            .carousel-item
+              .carousel-background
+                img(src='img/intro-carousel/5.jpg', alt='')
+          a.carousel-control-prev(href='#introCarousel', role='button', data-slide='prev')
+            span.carousel-control-prev-icon.ion-chevron-left(aria-hidden='true')
+            span.sr-only Previous
+          a.carousel-control-next(href='#introCarousel', role='button', data-slide='next')
+            span.carousel-control-next-icon.ion-chevron-right(aria-hidden='true')
+            span.sr-only Next
+    // #intro
+    //
+      members page----------
+      --------
+    section#team.bg-light.page-section
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading.text-uppercase Our Amazing Team
+            h3.section-subheading.text-muted Members.
+        .row
+          .col-lg-8.mx-auto.text-center
+            p.large.text-muted
+              | We are a group of individuals based in IIT Kharagpur who have seen the success of the strategies and plans of GYWS, IIT Kharagpur, one of India's largest govt. reg. student run NGO which aims at the socio economic development of the underprivileged near the IIT Kharagpur campus.
+              | We were inspired to reciprocate the same to various other parts of the nation so as to create a greater impact by spreading knowledge and experience gained through GYWS which has been running successfully since 2002 and now has over 150 active members and a budget of 30 lakh INR per annum.
+              | LIGHT currently aims at forming teams of spirited students in various colleges across India and we have already succeeded in convincing over 20 colleges which include various reputed IITs, NITs and IIITs.
+        .row
+          .col-lg-12.centered
+            center
+              .flip-card
+                .flip-card-inner
+                  .flip-card-front
+                    img.mx-auto.rounded-circle(src='img/memimg/prerit.jpg', style='border: 7px solid rgba(0, 0, 0, 0.1);', width='230px', height='230px')
+                  .flip-card-back
+                    .verticalalign
+                      ul.list-inline.social-buttons
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='#')
+                            i.fab.fa-instagram
+                        li.list-inline-item(style='margin-top: 50px')
+                          a(href='https://www.facebook.com/mrinalkbhanja')
+                            i.fab.fa-facebook-f
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='https://www.linkedin.com/in/mrinal-bhanja-78761038/')
+                            i.fab.fa-linkedin-in
+              br
+              h4
+                b PRERIT JAIN
+              p.text-muted Vice President
+        .row
+          .col-sm-2
+          .col-sm-4
+            center
+              .flip-card
+                .flip-card-inner
+                  .flip-card-front
+                    img.mx-auto.rounded-circle(src='img/memimg/manoj.jpg', style='border: 7px solid rgba(0, 0, 0, 0.1);', width='230px', height='230px')
+                  .flip-card-back
+                    .verticalalign
+                      ul.list-inline.social-buttons
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='#')
+                            i.fab.fa-instagram
+                        li.list-inline-item(style='margin-top: 50px')
+                          a(href='https://www.facebook.com/shivam.pandey.581187')
+                            i.fab.fa-facebook-f
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='https://www.linkedin.com/in/shivam-pandey-871107151/')
+                            i.fab.fa-linkedin-in
+              br
+              h4
+                b MANOJ MARASKOLHE
+              p.text-muted Chief operations officer
+          .col-sm-4
+            center
+              .flip-card
+                .flip-card-inner
+                  .flip-card-front
+                    img.mx-auto.rounded-circle(src='img/memimg/abhishek.jpg', style='border: 7px solid rgba(0, 0, 0, 0.1);', width='230px', height='230px')
+                  .flip-card-back
+                    .verticalalign
+                      ul.list-inline.social-buttons
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='#')
+                            i.fab.fa-instagram
+                        li.list-inline-item(style='margin-top: 50px')
+                          a(href='https://www.facebook.com/anshika.iitkgp')
+                            i.fab.fa-facebook-f
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='https://www.linkedin.com/in/anshika-shristi-54a67115b/')
+                            i.fab.fa-linkedin-in
+              br
+              h4
+                b ABHISHEK PANDEY
+              p.text-muted Chief sponsorship officer
+          .col-sm-2
+        .row
+          .col-sm-4
+            center
+              .flip-card
+                .flip-card-inner
+                  .flip-card-front
+                    img.mx-auto.rounded-circle(src='img/memimg/sumit.jpg', style='border: 7px solid rgba(0, 0, 0, 0.1);', width='230px', height='230px')
+                  .flip-card-back
+                    .verticalalign
+                      ul.list-inline.social-buttons
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='#')
+                            i.fab.fa-instagram
+                        li.list-inline-item(style='margin-top: 50px')
+                          a(href='#')
+                            i.fab.fa-facebook-f
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='#')
+                            i.fab.fa-linkedin-in
+              br
+              h4
+                b SUMIT SEN
+              p.text-muted Light Coordinator
+          .col-sm-4
+            center
+              .flip-card
+                .flip-card-inner
+                  .flip-card-front
+                    img.mx-auto.rounded-circle(src='img/memimg/aditya.jpg', style='border: 7px solid rgba(0, 0, 0, 0.1);', width='230px', height='230px')
+                  .flip-card-back
+                    .verticalalign
+                      ul.list-inline.social-buttons
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='#')
+                            i.fab.fa-instagram
+                        li.list-inline-item(style='margin-top: 50px')
+                          a(href='#')
+                            i.fab.fa-facebook-f
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='#')
+                            i.fab.fa-linkedin-in
+              br
+              h4
+                b ADITYA BHAGAT
+              p.text-muted Strategy and Operations head
+          .col-sm-4
+            center
+              .flip-card
+                .flip-card-inner
+                  .flip-card-front
+                    img.mx-auto.rounded-circle(src='img/memimg/prince.jpg', style='border: 7px solid rgba(0, 0, 0, 0.1);', width='230px', height='230px')
+                  .flip-card-back
+                    .verticalalign
+                      ul.list-inline.social-buttons
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='#')
+                            i.fab.fa-instagram
+                        li.list-inline-item(style='margin-top: 50px')
+                          a(href='#')
+                            i.fab.fa-facebook-f
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='#')
+                            i.fab.fa-linkedin-in
+              br
+              h4
+                b PRINCE MEENA
+              p.text-muted Public relations head
+        // new addition of members
+        .row
+          .col-sm-3
+            center
+              .flip-card
+                .flip-card-inner
+                  .flip-card-front
+                    img.mx-auto.rounded-circle(src='img/memimg/nivedita.jpg', style='border: 7px solid rgba(0, 0, 0, 0.1);', width='230px', height='230px')
+                  .flip-card-back
+                    .verticalalign
+                      ul.list-inline.social-buttons
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='#')
+                            i.fab.fa-instagram
+                        li.list-inline-item(style='margin-top: 50px')
+                          a(href='#')
+                            i.fab.fa-facebook-f
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='#')
+                            i.fab.fa-linkedin-in
+              br
+              h4
+                b NIVEDITA MAJEE
+              p.text-muted Senior executive member
+          .col-sm-3
+            center
+              .flip-card
+                .flip-card-inner
+                  .flip-card-front
+                    img.mx-auto.rounded-circle(src='img/memimg/pratik.jpg', style='border: 7px solid rgba(0, 0, 0, 0.1);', width='230px', height='230px')
+                  .flip-card-back
+                    .verticalalign
+                      ul.list-inline.social-buttons
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='#')
+                            i.fab.fa-instagram
+                        li.list-inline-item(style='margin-top: 50px')
+                          a(href='#')
+                            i.fab.fa-facebook-f
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='#')
+                            i.fab.fa-linkedin-in
+              br
+              h4
+                b PRATIK BANKA
+              p.text-muted Senior executive member
+          .col-sm-3
+            center
+              .flip-card
+                .flip-card-inner
+                  .flip-card-front
+                    img.mx-auto.rounded-circle(src='img/memimg/ravi.jpg', style='border: 7px solid rgba(0, 0, 0, 0.1);', width='230px', height='230px')
+                  .flip-card-back
+                    .verticalalign
+                      ul.list-inline.social-buttons
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='#')
+                            i.fab.fa-instagram
+                        li.list-inline-item(style='margin-top: 50px')
+                          a(href='#')
+                            i.fab.fa-facebook-f
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='#')
+                            i.fab.fa-linkedin-in
+              br
+              h4
+                b RAVI KUMAR MEENA
+              p.text-muted Senior executive member
+          .col-sm-3
+            center
+              .flip-card
+                .flip-card-inner
+                  .flip-card-front
+                    img.mx-auto.rounded-circle(src='img/memimg/nitish.jpg', style='border: 7px solid rgba(0, 0, 0, 0.1);', width='230px', height='230px')
+                  .flip-card-back
+                    .verticalalign
+                      ul.list-inline.social-buttons
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='#')
+                            i.fab.fa-instagram
+                        li.list-inline-item(style='margin-top: 50px')
+                          a(href='#')
+                            i.fab.fa-facebook-f
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='#')
+                            i.fab.fa-linkedin-in
+              br
+              h4
+                b NITISH RATHORE
+              p.text-muted Senior executive member
+        .row
+          .col-sm-3
+            center
+              .flip-card
+                .flip-card-inner
+                  .flip-card-front
+                    img.mx-auto.rounded-circle(src='img/memimg/anuj.jpg', style='border: 7px solid rgba(0, 0, 0, 0.1);', width='230px', height='230px')
+                  .flip-card-back
+                    .verticalalign
+                      ul.list-inline.social-buttons
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='#')
+                            i.fab.fa-instagram
+                        li.list-inline-item(style='margin-top: 50px')
+                          a(href='#')
+                            i.fab.fa-facebook-f
+                        li.list-inline-item(style='margin-top: 80px')
+                          a(href='#')
+                            i.fab.fa-linkedin-in
+              br
+              h4
+                b ANUJ PILANIA
+              p.text-muted Senior executive member
+        // new addition of members
+

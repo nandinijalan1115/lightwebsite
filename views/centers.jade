@@ -1,0 +1,341 @@
+extends layout
+
+block content
+  body
+    include navbar
+    //
+      ==========================
+      Intro Section
+      ============================
+    section#intro
+      .intro-container
+        #introCarousel.carousel.slide.carousel-fade(data-ride='carousel')
+          ol.carousel-indicators
+          .carousel-inner(role='listbox')
+            .carousel-item.active
+              .carousel-background
+                img(src='2.jpg', alt='')
+              .carousel-container
+            .carousel-item
+              .carousel-background
+                img(src='2.jpg', alt='')
+              .carousel-container
+            .carousel-item
+              .carousel-background
+                img(src='2.jpg', alt='')
+              .carousel-container
+            .carousel-item
+              .carousel-background
+                img(src='2.jpg', alt='')
+              .carousel-container
+            .carousel-item
+              .carousel-background
+                img(src='2.jpg', alt='')
+              .carousel-container
+          a.carousel-control-prev(href='#introCarousel', role='button', data-slide='prev')
+            span.carousel-control-prev-icon.ion-chevron-left(aria-hidden='true')
+            span.sr-only Previous
+          a.carousel-control-next(href='#introCarousel', role='button', data-slide='next')
+            span.carousel-control-next-icon.ion-chevron-right(aria-hidden='true')
+            span.sr-only Next
+    // #intro
+    //
+      ==========================
+      Centers Section
+      ============================
+    section#hotels.section-with-bg.wow.fadeInUp
+      .container
+        .section-header
+          h2 Centers
+          p Here are our currently active centers
+        .row
+          .col-lg-4.col-md-6
+            .hotel
+              .hotel-img
+                img.img-fluid(src='img/centers/9.jpg', alt='Hotel 1', data-toggle='modal', data-target='#myModal9')
+              h3 Center Samvedna
+              p
+                | Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text
+          // The Modal
+          #myModal9.modal
+            .modal-dialog.modal-lg
+              .modal-content
+                // Modal Header
+                .modal-header
+                  h4.modal-title(style=' color: red;') SAMVEDNA
+                  button.close(type='button', data-dismiss='modal') ×
+                // Modal body
+                .modal-body
+                  center
+                    img(src='img/centers/sm1.jpg', width='700px', height='300px')
+                  br
+                  center
+                    img(src='img/centers/sm2.jpg', width='700px', height='300px')
+                  br
+                  center
+                    img(src='img/centers/sm3.jpg', width='700px', height='300px')
+                  br
+                  center
+                    h1 BLOOD DONOTION CAMP
+                    p
+                      | “Thousands of patients need blood transfusion. Just three teaspoon of blood can save the life of a premature baby. Every drop counts, one single donation can be split into three separate parts. Doing our little bit for society with the motto `DONATE BLOOD, DONATE LIFE `the Government college of engineering aurangabad recently organised Blood donation camp where more than 151 donors donated blood.”
+                  center
+                    img(src='img/centers/sb1.png', width='700px', height='300px')
+                  br
+                  center
+                    img(src='img/centers/sb2.png', width='700px', height='300px')
+                  br
+                  center
+                    img(src='img/centers/sb3.png', width='700px', height='300px')
+                  br
+                  center
+                    h1 Coaching classes
+                    p
+                      | “They require love, care, affection, warmth and, very importantly, education. Volunteers joining the orphanage volunteer program in Government college of Engineering- Aurangabad provide support to these orphan children.Just spend 2 hours on weekends with them. Receive their warmth and affection. Working for children is a truly fulfilling and enriching experience.”
+                  center
+                    img(src='img/centers/sc1.png', width='700px', height='300px')
+                  br
+                  center
+                    img(src='img/centers/sc2.png', width='700px', height='300px')
+                  br
+                  center
+                    img(src='img/centers/sc3.png', width='700px', height='300px')
+                  br
+                // Modal footer
+                .modal-footer
+                  button.btn.btn-danger(type='button', data-dismiss='modal') Close
+          .col-lg-4.col-md-6
+            .hotel
+              .hotel-img
+                img.img-fluid(src='img/centers/8.jpg', alt='Hotel 1', data-toggle='modal', data-target='#myModal8')
+              h3 Center IIIT Kanchipuram
+              p
+                | Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text
+          // The Modal
+          #myModal8.modal
+            .modal-dialog.modal-lg
+              .modal-content
+                // Modal Header
+                .modal-header
+                  h4.modal-title(style=' color: red;') IIIT KNACHEEPURAM
+                  button.close(type='button', data-dismiss='modal') ×
+                // Modal body
+                .modal-body
+                  p
+                    | “Let's fill our homes with prayers and lights" . With this aim, student at Kancheepuram visited an orphanage to celebrate Diwali. Apart from understanding their lifestyle, they also tried to identify day-to-day problems faced by them. Food distribution was done at the end of the day.
+                  center
+                    img(src='img/centers/k1.png', width='700px', height='300px')
+                  br
+                  center
+                    img(src='img/centers/k2.png', width='700px', height='300px')
+                  br
+                  center
+                    img(src='img/centers/k3.png', width='700px', height='300px')
+                  br
+                // Modal footer
+                .modal-footer
+                  button.btn.btn-danger(type='button', data-dismiss='modal') Close
+          .col-lg-4.col-md-6
+            .hotel
+              .hotel-img
+                img.img-fluid(src='img/centers/6.jpg', alt='Hotel 1', data-toggle='modal', data-target='#myModal6')
+              h3 Center Bhopal
+              p
+                | Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text
+          // The Modal
+          #myModal6.modal
+            .modal-dialog.modal-lg
+              .modal-content
+                // Modal Header
+                .modal-header
+                  h4.modal-title(style=' color: red;') BHOPAL
+                  button.close(type='button', data-dismiss='modal') ×
+                // Modal body
+                .modal-body
+                  p
+                    | “ We all have special talent within us but due to unavailability of opportunities we ain't able to express it to the world.So here is something where LiGHT-BHOPAL under its initiatives of [Youth Upliftment,Women Empowerment,Social Awareness] conducted an OPEN MIC event named KHULE AAM BOL where people with different talent comes and performed on stage.We the LiGHT team- Thanks every performer and audience for coming and making this event a grand success.”
+                  center
+                    img(src='img/centers/b1.png', width='700px', height='300px')
+                  br
+                  center
+                    img(src='img/centers/b2.png', width='700px', height='300px')
+                  br
+                  center
+                    img(src='img/centers/b3.png', width='700px', height='300px')
+                  br
+                // Modal footer
+                .modal-footer
+                  button.btn.btn-danger(type='button', data-dismiss='modal') Close
+          .col-lg-4.col-md-6
+            .hotel
+              .hotel-img
+                img.img-fluid(src='img/centers/7.jpg', alt='Hotel 1', data-toggle='modal', data-target='#myModal7')
+              h3 Center Gaya
+              p
+                | Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text
+          // The Modal
+          #myModal7.modal
+            .modal-dialog.modal-lg
+              .modal-content
+                // Modal Header
+                .modal-header
+                  h4.modal-title(style=' color: red;') GAYA
+                  button.close(type='button', data-dismiss='modal') ×
+                // Modal body
+                .modal-body
+                  p
+                    | “God has given us two hands: one to receive with and the other to give with.” Inspired by this, members of LIGHT Gaya conducted a visit to The Gaya Muslim Orphanage. The children there were so much excited to see the members and they presented some cultural performances for the members. The members conducted various events such as yoga lessons, painting, singing, and some sporting events also for different age groups. Races, frog races and musical chairs was conducted for the children.
+                    | At the end of the joyous and eventful day, prize distribution was done and chocolates and goodies were distributed to children.
+                  center
+                    img(src='img/centers/g1.png', width='700px', height='300px')
+                  br
+                  center
+                    img(src='img/centers/g2.png', width='700px', height='300px')
+                  br
+                  center
+                    img(src='img/centers/g3.png', width='700px', height='300px')
+                  br
+                  center
+                    img(src='img/centers/g3.png', width='700px', height='300px')
+                  br
+                // Modal footer
+                .modal-footer
+                  button.btn.btn-danger(type='button', data-dismiss='modal') Close
+          .col-lg-4.col-md-6
+            .hotel
+              .hotel-img
+                img.img-fluid(src='img/centers/5.jpg', alt='Hotel 1', data-toggle='modal', data-target='#myModal5')
+              h3 Center Sikkim
+              p
+                | Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text
+          // The Modal
+          #myModal5.modal
+            .modal-dialog.modal-lg
+              .modal-content
+                // Modal Header
+                .modal-header
+                  h4.modal-title(style=' color: red;') SIKKIM
+                  button.close(type='button', data-dismiss='modal') ×
+                // Modal body
+                .modal-body
+                  center
+                    img(src='img/centers/s1.jpg', width='700px', height='300px')
+                  br
+                  center
+                    img(src='img/centers/s2.jpg', width='700px', height='300px')
+                  br
+                  center
+                    img(src='img/centers/s3.jpg', width='700px', height='300px')
+                  br
+                // Modal footer
+                .modal-footer
+                  button.btn.btn-danger(type='button', data-dismiss='modal') Close
+          .col-lg-4.col-md-6
+            .hotel
+              .hotel-img
+                img.img-fluid(src='img/centers/4.jpg', alt='Hotel 1', data-toggle='modal', data-target='#myModal4')
+              h3 Center Raipur
+              p
+                | Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text
+          // The Modal
+          #myModal4.modal
+            .modal-dialog.modal-lg
+              .modal-content
+                // Modal Header
+                .modal-header
+                  h4.modal-title(style=' color: red;') RAIPUR
+                  button.close(type='button', data-dismiss='modal') ×
+                // Modal body
+                .modal-body
+                  center
+                    img(src='img/centers/ri1.jpg', width='700px', height='300px')
+                  br
+                  center
+                    img(src='img/centers/ri2.jpg', width='700px', height='300px')
+                  br
+                // Modal footer
+                .modal-footer
+                  button.btn.btn-danger(type='button', data-dismiss='modal') Close
+          .col-lg-4.col-md-6
+            .hotel
+              .hotel-img
+                img.img-fluid(src='img/centers/3.jpg', alt='Hotel 1', data-toggle='modal', data-target='#myModal3')
+              h3 Center Kurukshetra
+              p
+                | Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text
+          // The Modal
+          #myModal3.modal
+            .modal-dialog.modal-lg
+              .modal-content
+                // Modal Header
+                .modal-header
+                  h4.modal-title(style=' color: red;') KURUKSHETRA
+                  button.close(type='button', data-dismiss='modal') ×
+                // Modal body
+                .modal-body
+                  center
+                    img(src='img/centers/ks1.jpg', width='700px', height='300px')
+                  br
+                  center
+                    img(src='img/centers/ks2.jpg', width='700px', height='300px')
+                  br
+                  center
+                    img(src='img/centers/ks3.jpg', width='700px', height='300px')
+                  br
+                // Modal footer
+                .modal-footer
+                  button.btn.btn-danger(type='button', data-dismiss='modal') Close
+          .col-lg-4.col-md-6
+            .hotel
+              .hotel-img
+                img.img-fluid(src='img/centers/2.jpg', alt='Hotel 1', data-toggle='modal', data-target='#myModal2')
+              h3 Center Kharagpur
+              p
+                | Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text
+          #myModal2.modal
+            .modal-dialog.modal-lg
+              .modal-content
+                // Modal Header
+                .modal-header
+                  h4.modal-title(style=' color: red;') KHARAGPUR
+                  button.close(type='button', data-dismiss='modal') ×
+                // Modal body
+                .modal-body
+                  center
+                    img(src='img/centers/kgp1.jpeg', width='700px', height='200px')
+                  br
+                  br
+                  center
+                    img(src='img/centers/kgp2.jpg', style='transform: rotate(90deg);', height='200px')
+                  br
+                  br
+                  br
+                  br
+                  center
+                    img(src='img/centers/kgp3.jpg', style='transform: rotate(90deg); ', height='200px')
+                  br
+                // Modal footer
+                .modal-footer
+                  button.btn.btn-danger(type='button', data-dismiss='modal') Close
+          .col-lg-4.col-md-6
+            .hotel
+              .hotel-img
+                img.img-fluid(src='img/centers/1.jpg', alt='Hotel 1', data-toggle='modal', data-target='#myModal1')
+              h3 Center Dhanbad
+              p
+                | Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text
+          // The Modal
+          #myModal1.modal
+            .modal-dialog.modal-lg
+              .modal-content
+                // Modal Header
+                .modal-header
+                  h4.modal-title(style=' color: red;') DHANBAD
+                  button.close(type='button', data-dismiss='modal') ×
+                // Modal body
+                .modal-body
+                  center
+                    img(src='img/centers/d1.jpg', width='700px')
+                // Modal footer
+                .modal-footer
+                  button.btn.btn-danger(type='button', data-dismiss='modal') Close
